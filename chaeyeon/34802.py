@@ -14,7 +14,8 @@ s = start[2] + start[1]*60 + start[0]*60*60
 time = s - c
 result = time - (t * ((100-k)/100))
 
-if ((time < 0) or (result > 0)) :
+if ((time < 0) or (result < 0)) :
     print(0)
 else :
     print(1)
+    
